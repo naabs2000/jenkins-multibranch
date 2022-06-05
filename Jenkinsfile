@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'M2_HOME') {
-                    sh 'clean package'
+                    sh 'mvn clean package'
                 }
             }
         }
